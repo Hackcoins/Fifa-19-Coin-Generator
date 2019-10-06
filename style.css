@@ -1,0 +1,339 @@
+.dl_button{
+    width:100%;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+ body {
+     background: #000 url(http://imgs.tuts.dragoart.com/how-to-draw-forests-forest-backgrounds_1_000000013031_5.png) no-repeat;
+     background-position: 50% 50%;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+     background-attachment: scroll;
+     overflow-y: scroll;
+     overflow-x: hidden;
+     padding: 10px;
+}
+ #b-overlay{
+     background: rgba(255,255,255,0);
+     background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 43%, rgba(0,0,0,1) 100%);
+     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(43%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,1)));
+     background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 43%, rgba(0,0,0,1) 100%);
+     background: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 43%, rgba(0,0,0,1) 100%);
+     background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 43%, rgba(0,0,0,1) 100%);
+     background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 43%, rgba(0,0,0,1) 100%);
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=0 );
+     width:100%;
+    height:100%;
+     position:fixed;
+     left:0px;
+     right:0px;
+     top:0px;
+     bottom:0px;
+     z-index:-10;
+}
+ #container{
+     padding: 20px;
+     border: 0px;
+     color: #777;
+     margin:20px auto;
+     max-width:600px;
+     border-radius:5px;
+}
+ #c-head{
+     padding:0px 10px;
+     color:#fff;
+     text-align:center;
+}
+ #dark-overlay{
+     background: url(http://slideshowbackgroundtheme.weebly.com/files/theme/pattern.png);
+     padding: 10px;
+     position: fixed;
+     width: 100%;
+     height: 100%;
+     top: 0px;
+     left: 0px;
+     overflow-y:scroll;
+     display:none;
+}
+ #human-verification{
+     background: white;
+     border: 3px solid red;
+     color: #777;
+     margin:10% auto;
+     max-width:350px;
+     border-radius:5px;
+     box-shadow:0px 0px 10px black 
+}
+ #hv-head{
+     position:relative;
+     background:#119999;
+     top:20px;
+     padding:0px 10px;
+     color:#fff;
+     text-align:center;
+}
+ #offer-padding{
+     padding:10px;
+     text-align:center;
+     min-height:200px;
+}
+ .link_a:link {
+     background: #19f;
+     background-color: none;
+     background-image: none;
+     border-image: none;
+     border-radius: none;
+     border-style: none;
+     border-width: none;
+     box-shadow: none;
+     cursor: pointer;
+     display: inline-block;
+     font-size: 14px;
+     line-height: 20px;
+     margin-bottom: 0;
+     padding: 4px 12px;
+     text-align: center;
+     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+     vertical-align: middle;
+     font-weight: normal;
+     text-decoration: none;
+     color: #fff;
+     width: 100%;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+}
+ .glyphicon-download-alt{
+    display:none;
+}
+ #helper{
+    padding:10px;
+}
+ #blink {
+     -webkit-animation-name: blinker;
+     -webkit-animation-duration: .8s;
+     -webkit-animation-timing-function: linear;
+     -webkit-animation-iteration-count: infinite;
+     -moz-animation-name: blinker;
+     -moz-animation-duration: 1s;
+     -moz-animation-timing-function: linear;
+     -moz-animation-iteration-count: infinite;
+     animation-name: blinker;
+     animation-duration: 1s;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+}
+ @-moz-keyframes blinker {
+     0% {
+         opacity: 1.0;
+    }
+     50% {
+         opacity: 0.0;
+    }
+     100% {
+         opacity: 1.0;
+    }
+}
+ @-webkit-keyframes blinker {
+     0% {
+         opacity: 1.0;
+    }
+     50% {
+         opacity: 0.0;
+    }
+     100% {
+         opacity: 1.0;
+    }
+}
+ @keyframes blinker {
+     0% {
+         opacity: 1.0;
+    }
+     50% {
+         opacity: 0.0;
+    }
+     100% {
+         opacity: 1.0;
+    }
+}
+ #banner{
+    width:100%;
+    max-width:650px
+}
+ #step1{
+     padding: 20px;
+     color: #777;
+     margin:-50px auto;
+     max-width:600px;
+     border-radius:5px;
+     border:2px solid black;
+     text-align:center;
+     background-color: rgba(15, 29, 31, 0.5);
+     background: rgba(15, 29, 31, 0.5);
+     color: rgba(15, 29, 31, 0.5);
+}
+ #step2{
+     background:black;
+     padding: 20px;
+     border: 3px dashed brown;
+     box-shadow:0px 0px 10px black;
+     color: #777;
+     margin:20px auto;
+     max-width:400px;
+     border-radius:5px;
+     text-align:center 
+}
+ input{
+    font-family: 'Heebo', sans-serif;
+     width:100%;
+    max-width:400px;
+    font-size:25px;
+    padding:3px;
+     -webkit-transition: text-shadow 0.2s linear;
+     -moz-transition: text-shadow 0.2s linear;
+     -ms-transition: text-shadow 0.2s linear;
+     -o-transition: text-shadow 0.2s linear;
+     transition: text-shadow 0.2s linear;
+}
+ select{
+    font-family: 'Heebo', sans-serif;
+     width:100%;
+    max-width:400px;
+    font-size:25px;
+    padding:3px;
+     border: 10px solid transparent;
+     -webkit-border-image: url(https://subtlepatterns.com/patterns/skulls.png) 30 round;
+    /* Safari 3.1-5 */
+     -o-border-image: url(https://subtlepatterns.com/patterns/skulls.png) 30 round;
+    /* Opera 11-12.1 */
+     border-image: url(https://subtlepatterns.com/patterns/skulls.png) 30 round;
+    box-shadow:0px 0px 10px black;
+    border:2px solid gold;
+}
+ #connect{
+    border:0px;
+    width:100%;
+    max-width:400px;
+    font-size:25px;
+    padding:7px;
+    margin:30px auto;
+     background: rgba(169,3,41,1);
+     background: -moz-linear-gradient(45deg, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+     background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(169,3,41,1)), color-stop(44%, rgba(143,2,34,1)), color-stop(100%, rgba(109,0,25,1)));
+     background: -webkit-linear-gradient(45deg, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+     background: -o-linear-gradient(45deg, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+     background: -ms-linear-gradient(45deg, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+     background: linear-gradient(45deg, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019', GradientType=1 );
+    font-family: 'Heebo', sans-serif;
+    color:white;
+}
+ #generate{
+    border:0px;
+    width:100%;
+    max-width:400px;
+    font-size:25px;
+    padding:7px;
+    margin:30px auto;
+     background: rgba(169,3,41,1);
+     background: -moz-linear-gradient(left, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(169,3,41,1)), color-stop(44%, rgba(143,2,34,1)), color-stop(100%, rgba(109,0,25,1)));
+     background: -webkit-linear-gradient(left, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+     background: -o-linear-gradient(left, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+     background: -ms-linear-gradient(left, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+     background: linear-gradient(to right, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019', GradientType=1 );
+    font-family: 'Heebo', sans-serif;
+    color:white;
+    border:2px solid gold;
+}
+ #step2-overlay{
+     background: url(http://slideshowbackgroundtheme.weebly.com/files/theme/pattern.png);
+     padding: 10px;
+     position: fixed;
+     width: 100%;
+     height: 100%;
+     top: 0px;
+     left: 0px;
+     display:none;
+     overflow-y:scroll;
+}
+ h3{
+    font-family: 'Heebo', sans-serif;
+     background: -webkit-linear-gradient(#f1e867, #feb745);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+ #close{
+    color:gold;
+    float:right;
+    cursor:pointer;
+    position:relative;
+    top:-20px;
+}
+ #process-text{
+    font-family: 'Heebo', sans-serif;
+     background: -webkit-linear-gradient(#777, #333);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+ #close{
+    color:gold;
+    float:right;
+    cursor:pointer;
+    position:relative;
+    top:-20px;
+}
+ #process-overlay{
+     background-color: rgba(14, 0, 0, 0.5);
+     background: rgba(14, 0, 0, 0.5);
+     color: rgba(14, 0, 0, 0.5);
+     padding: 10px;
+     position: fixed;
+     width: 100%;
+     height: 100%;
+     top: 0px;
+     left: 0px;
+     display:none;
+}
+ #process{
+     background:white;
+     padding: 20px;
+     box-shadow:0px 0px 10px 3px black;
+     color: #777;
+     margin:10% auto;
+     max-width:300px;
+     border-radius:8px;
+     text-align:center;
+     position:relative;
+     left:-50px;
+     opacity:0;
+}
+ .loader {
+     border: 16px solid #f3f3f3;
+     border-radius: 50%;
+     border-top: 16px solid #3498db;
+     width: 60px;
+     height: 60px;
+     -webkit-animation: spin 1s linear infinite;
+     animation: spin 1s linear infinite;
+     display:none;
+}
+ @-webkit-keyframes spin {
+     0% {
+         -webkit-transform: rotate(0deg);
+    }
+     100% {
+         -webkit-transform: rotate(360deg);
+    }
+}
+ @keyframes spin {
+     0% {
+         transform: rotate(0deg);
+    }
+     100% {
+         transform: rotate(360deg);
+    }
+}
